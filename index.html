@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>PortalHP</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-12 m-auto fixed-top">
+    <div class="container-fluid col-11 m-auto">
+      <a class="navbar-brand" href="#">
+        <img class="tam" src="img/raio.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Pagina inicial <span class="sr-only">(página atual)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#anc">Críticas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ora">Sinopse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cont">Contato</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Carrosel -->
+  <div class="m">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 img-class cover container-fluid img-fluid" src="img/pttr.jpg" alt="Primeiro Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 img-class container-fluid img-fluid" src="img/harry.jpg" alt="Segundo Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 img-class container-fluid img-fluid" src="img/maroto.jpg" alt="Terceiro Slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+  </div>
+
+
+
+  <h1 class="py-5 pl-5">Sinopse</h1>
+  <!-- cards -->
+
+  <div class="row">
+    <div class="card-deck p-5 " id="ora">
+      <div class="card">
+        <img class="card-img-top" src="img/111116_animais-fantasticos.jpg" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Animais Fantásticos e onde habitam</h5>
+          <p class="card-text">Um excêntrico magizoologista carrega uma maleta cheia de animais mágicos coletados
+            durante suas viagens pelo mundo. As criaturas acabam saindo de sua mala em Nova York, e agora ele precisa
+            usar suas habilidades para capturá-las.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">
+            <!-- Botão para acionar modal -->
+            <!-- Botão do modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo1">
+              Detalhes
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="modalExemplo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Informações do Filme</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- texto no modal -->
+                  <div class="modal-body">
+                    Data de lançamento: 17 de novembro de 2016
+                    <br>
+                    Receita: US$ 800 milhões
+                    <br>
+                    Duração: 2h 13min
+                    <br>
+                    Direção: David Yates
+                    <br>
+                    Roteiro: JK Rowling
+                    <br>
+                    Elenco: Eddie Redmayne, Katherine Waterston, Dan Fogler
+                    <br>
+                    Título original: Fantastic Beasts and Where to Find Them
+                    <br>
+                    Link informações: <a href="https://www.adorocinema.com/filmes/filme-223940/"> Adorocinema</a>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </small>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <img class="card-img-top" src="img/tiogrindi.jpg" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Animais Fantásticos: Os Crimes De Grindelwald</h5>
+          <p class="card-text">Newt Scamander reencontra os queridos amigos Tina Goldstein, Queenie Goldstein e Jacob
+            Kowalski. Ele é recrutado pelo seu antigo professor em Hogwarts, Alvo Dumbledore, para enfrentar o terrível
+            bruxo das trevas Gellert Grindelwald, que escapou da custódia da Macusa (Congresso Mágico dos EUA) e reúne
+            seguidores, dividindo o mundo entre seres de magos sangue puro e seres não-mágicos.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">
+            <!-- Botão do modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo2">
+              Detalhes
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="modalExemplo2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Informações do Filme</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- texto no modal -->
+                  <div class="modal-body">
+                    Data de lançamento: 15 de novembro de 2018
+                    <br>
+                    Receita: US$ 653.655.901
+                    <br>
+                    Duração: 2h 13min
+                    <br>
+                    Direção: David Yates
+                    <br>
+                    Roteiro: JK Rowling
+                    <br>
+                    Elenco: Eddie Redmayne, Katherine Waterston, Dan Fogler
+                    <br>
+                    Título original Fantastic Beasts: The Crimes Of Grindelwald
+                    <br>
+                    Link informações: <a href="https://www.adorocinema.com/filmes/filme-228086/">Adorocinema</a>
+                    <br>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </small>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <img class="card-img-top" src="img/anifan.jpg" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Animais Fantásticos: Os Segredos de Dumbledore </h5>
+          <p class="card-text">Animais Fantásticos: Os Segredos de Dumbledore é a sequência das aventuras de Newt
+            Scamander (Eddie Redmayne), um magizoologista que carrega em sua maleta uma coleção de fantásticos animais
+            do mundo da magia descoberta em suas viagens. Dessa vez, ele é convocado por Albus Dumbledore (Jude Law) na
+            luta contra o vilão Grindelwald (Mads Mikkelsen).</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">
+            <!-- Botão do modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo3">
+              Detalhes
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="modalExemplo3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Informações do Filme</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- texto no modal -->
+                  <div class="modal-body">
+                    Data de lançamento: 14 de abril de 2022
+                    <br>
+                    Receita: US$ 329,5 milhões
+                    <br>
+                    Duração: 2h 22min
+                    <br>
+                    Direção: David Yates
+                    <br>
+                    Roteiro: JK Rowling
+                    <br>
+                    Elenco: Eddie Redmayne, Jude Law, Mads Mikkelsen
+                    <br>
+                    Título original Fantastic Beasts: The Secrets Of Dumbledore
+                    <br>
+                    Link informações: Adorocinema
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </small>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <h1 id="anc">Críticas</h1>
+
+
+  <div class="row">
+    <div class="container">
+
+      <h2 class="ccc p-5">
+        ANIMAIS FANTÁSTICOS E ONDE HABITAM
+      </h2>
+      <p class="ccc p-5">
+        Lançado em 2001, Harry Potter e a Pedra Filosofal foi a primeira adaptação do universo criado por J.K. Rowling
+        para as telonas. Depois disso, foram outros sete filmes. E com o passar do tempo, os personagens foram crescendo
+        e a trama ficando mais adulta. Ao mesmo tempo, o público também foi crescendo junto com os atores. Com o anúncio
+        de um novo longa passado no universo, o receio era de que ignorasse este amadurecimento do espectador para
+        investir mais uma vez no público infantil.
+
+        Animais Fantásticos e Onde Habitam - FotoFelizmente, não é o que acontece em Animais Fantásticos e Onde Habitam,
+        primeiro de cinco produções que chegarão aos cinemas nos próximos anos. Trata-se de uma obra mais adulta.
+        Afinal, quem cresceu com a franquia, já é adulto hoje em dia. Mas não se preocupem, não vai faltar magia.
+
+        O título remete ao nome de um livro citado em Harry Potter. O autor da obra é Newt Scamander (Eddie Redmayne),
+        um ex-aluno de Hogwarts que chega a Nova York com uma maleta repleta de animais mágicos. Após uma confusão,
+        alguns bichos acabam soltos na cidade e o bruxo é obrigado a capturá-los antes que causem algum mal.
+
+        A premissa não poderia ser mais simples e boba - e de fato rende cenas dispensáveis e infantis. Mas fica só
+        nisso, é apenas a premissa. Não estamos diante de "Harry Potter Go". O roteiro, de autoria da própria Rowling, é
+        bem mais complexo do que isso, inserindo diversas camadas. Consegue introduzir bem o universo mágico dos Estados
+        Unidos, com direito a presidente, congresso e termos bem diferentes do qual nos acostumamos, que é aquele da
+        Inglaterra. Na verdade, Newt chega numa NY atormentada por ataques recentes de uma criatura mágica misteriosa.
+        Ao mesmo tempo, a comunidade bruxa de todo mundo vive sob o medo de Gellert Grindelwald (Johnny Depp).
+
+        O longa aborda temas como medo do desconhecido, repressão, fanatismo religioso e demonstra uma importante
+        preocupação com representatividade ao colocar uma mulher negra no posto de presidente da comunidade mágica. E
+        isso deve ser ainda mais explorado nos próximos filmes.
+
+        Animais Fantásticos e Onde Habitam - FotoQuem espera uma produção repleta de referências a Harry Potter vai se
+        decepcionar. Mas a verdade é que é bom que Animais Fantásticos seja uma obra mais fechada em si mesmo. Há
+        citações, é claro, a personagens como Dumbledore, a feitiços conhecidos, a sobrenomes famosos e às relíquias da
+        morte, mas nada que passe de pequenas dicas ou apontamentos do que ainda vem por aí.
+
+        James Newton Howard faz um belo trabalho na construção de uma trilha sonora original, embora seja difícil não se
+        emocionar ao ouvir uns poucos acordes do tema de John Williams logo na abertura. Cabe destacar ainda o trabalho
+        da equipe de efeitos visuais, que realmente fez jus ao adjetivo "fantásticos" que fica ao lado dos "animais".
+
+        Diretor dos quatro últimos filmes de HP, David Yates realizou mais um bom trabalho. Se em Harry Potter e a Ordem
+        da Fênix (e seguintes) ele meio que seguiu um tom que Alfonso Cuarón havia empregado em Harry Potter e o
+        Prisioneiro de Azkaban, aqui ele demonstra ter uma visão própria. O tom sombrio predomina, mas é curioso notar
+        que boa parte da ação acontece num momento em que a luminosidade não é plena, nem escura, por volta do
+        crepúsculo ou do amanhecer. Neste sentido, cabe destacar também o trabalho do diretor de fotografia Philippe
+        Rousselot, de Peixe Grande e Suas Histórias Maravilhosas.
+
+        Animais Fantásticos e Onde Habitam - FotoSem cenas pós-créditos, mas com 133 minutos de duração, Fantastic
+        Beasts and Where to Find Them (no original) peca um pouco em seu ritmo, fruto de uma montagem irregular de Mark
+        Day, que trabalhou com Yates nos quatro últimos HP.
+
+        O elenco também merece destaque, especialmente Eddie Redmayne e Katherine Waterston. Ele não é o típico herói,
+        se mostrando bem atrapalhado, mas ao mesmo tempo muito sensível. Ela, por sua vez, é uma ex-aurora que é louca
+        para provar seu valor. Dan Fogler é o alívio cômico como um trouxa, ou não-mágico, mas tem mais espaço em cena
+        do que devia. Colin Farrell, Ezra Miller, Samantha Morton, Jon Voight, Alison Sudol e Zoë Kravitz completam o
+        time.
+
+        Animais Fantásticos e Onde Habitam é uma ótima reintrodução ao universo de J.K. Rowling. E, mais que isso, é uma
+        expansão que abre inúmeras possibilidades daqui pra frente. Os próximos filmes devem explorar a figura de
+        Grindelwald, seu conflito com Dumbledore e abranger ainda mais a história de Newt. Agora, é esperar pelo
+        próximo. E que chegue logo!
+
+
+      </p>
+      <h2 class="ccc">
+        ANIMAIS FANTÁSTICOS: OS CRIMES DE GRINDELWALD
+      </h2>
+      <p class="ccc p-5">
+        J. K. Rowling criou um universo literário que posteriormente foi muito bem abordado nos cinemas através da saga
+        de Harry Potter. No entanto, a escritora não está nem perto de finalizar suas histórias. Em Animais Fantásticos,
+        franquia que não tem como base apenas um personagem específico, outra fase do tão querido universo mágico que
+        Rowling criou está em destaque – e o elo entre dois mundos diferentes que se complementam nunca esteve tão
+        forte. Por mais que seja apenas o segundo capítulo de cinco, Os Crimes de Grindelwald insere uma trama sombria e
+        complexa, conversando de forma mais direta com a realidade que Potter viveu décadas depois.
+
+        O personagem que ganha o destaque no título é ninguém menos que Gerardo Grindelwald, bruxo que possui uma forte
+        ligação com o professor Alvo Dumbledore e que, posteriormente, o enfrentou em um duelo que o mundo mágico avalia
+        como o maior de todos os tempos. A amizade e as diferenças entre ambos começam a ser exploradas com consideração
+        neste capítulo e entregam uma parcela de curiosidade em relação ao passado. O contexto deste arco já foi muito
+        comentado por Rowling e foi iniciado de maneira interessante. O roteiro (assinado pela escritora) também conduz
+        arcos diversificados e que podem parecer isolados em um primeiro momento, mas levam a crer que terão ainda mais
+        aproveitamento no futuro. Existe certa confusão ao tratar de tantos assuntos em apenas um capítulo, mas a
+        conversa entre todos os lados da história está presente, mesmo que soe mais como um sussurro.
+
+
+
+        Exceto por Grindelwald, Dumbledore e Hogwarts, o roteiro não arrisca muito a explorar elementos novos,
+        aproveitando, assim, a vastidão do que já foi exibido anteriormente. Assim como em Animais Fantásticos e Onde
+        Habitam, há belas cenas em que são exibidas criaturas dos mais diferentes locais (inclusive, há uma originada do
+        Japão e outra da América Latina), mas em menor escala. Tais momentos servem como um respiro à narrativa e não
+        atrapalham seu andamento, que desde o princípio já é densa e carregada pela presença de Grindelwald. A saga
+        Harry Potter ganha mais destaque a partir de agora, entregando fragmentos (seja na forma de palavras,
+        personagens, objetos, feitiços ou ambientes) de nostalgia em ocasiões específicas. Felizmente, tal
+        aproveitamento não é mal executado: Hogwarts, com toda sua grandiosidade física e afetiva, dá uma sensação
+        familiar, enquanto o Dumbledore de Jude Law transfere vivacidade e personalidade, entregando um retrato próximo
+        com o que ele se tornou quando mais velho.
+
+        Ao mesmo tempo em que o roteiro utiliza artifícios interessantes para desenvolver sua dramaticidade, ele
+        transforma Newt Scamander (Eddie Redmayne) e Tina Goldstein (Katherine Waterston) em coadjuvantes. Newt tem um
+        papel mais curioso em Os Crimes de Grindelwald, pois também pode ser visto como observador de tudo o que se
+        sucede neste segundo capítulo. Ao mesmo tempo em que nos apresenta mais criaturas e cativa com sua presença
+        doce, ele também observa silenciosamente as mudanças que Grindelwald está introduzindo no mundo bruxo. Newt
+        representa uma chance de atitude necessária e primordial para a atual situação abordada: a de tomar um lado e
+        agir seguindo crenças e ideais. Tina, que na linha do tempo se tornará esposa de Newt, anda pelo mesmo caminho e
+        prova a boa aplicação de realidade que Rowling insere em suas ficções.
+
+
+
+        Dentre os novos personagens estão o irmão de Newt, Nicolau Flamel (apenas citado em Harry Potter e a Pedra
+        Filosofal) e Nagini (que ainda se encontra longe de ser a cobra de Voldemort), mas a mais interessante é Leta
+        Lestrange (Zoë Kravitz), que possui não só mais atenção como também relevância. Sua família, tão abordada na
+        saga Harry Potter, ganha novos traços e uma nova abordagem devido à sua personalidade, destoada de seus futuros
+        parentes. Quanto aos outros arcos firmados estão os dos já conhecidos Queenie (Alison Sudol) e Credence (Ezra
+        Miller), que inserem bastante intensidade ao tratar o tema da identidade como combustíveis para suas ações.
+        Ambos fazem parte dos twists narrativos que mais impressionam e reforçam até onde J. K. Rowling quer chegar. A
+        questão, especialmente com relação a Credence, é até onde ela deveria ir – pois neste caso é onde residem
+        algumas fragilidades.
+
+        Os discursos políticos e sociais de Grindelwald formam outro ponto-chave da produção e certamente serão mais
+        trabalhados nos próximos capítulos. A boa notícia é que, apenas neste filme, já é possível entender (mesmo de
+        modo amplo) os motivos do comportamento do vilão. Tudo indica que os três longas futuros darão mais chão no que
+        se refere ao que Grindelwald almeja, tais como motivações mais aprofundadas. O fato é que ele sabe muito bem
+        como induzir seus potenciais seguidores a pensarem diferente e seguirem seu raciocínio – por mais que dê apenas
+        um panorama geral da realidade que ele acredita ser a verídica. Ao contrário de Voldemort, que era violento em
+        suas palavras e atos, o Grindelwald de Johnny Depp é tão esperto quanto meticuloso pois sabe exatamente qual
+        será o peso de suas palavras. Sua persuasão pode parecer sutil aos olhos de alguns, mas é bem mais poderosa do
+        que os feitiços que profere.
+
+        Em meio a um deslumbrante resultado técnico e visual, Os Crimes de Grindelwald faz um excelente trabalho ao
+        adentrar ainda mais em sua mitologia e abrir interpretações para discussões que se conectam com nosso mundo
+        real. Contudo, há certo limite em buscar a homenagem e explorar a grandeza deste universo simultaneamente, pois
+        as escolhas criativas podem interferir bastante no futuro. Com um desfecho surpreendente e ao mesmo tempo sem
+        muita sustentação, é curioso pensar nos rumos desta franquia. Se há alguns anos Rowling nos ensinou que mudar o
+        passado pode trazer graves consequências, tudo o que certamente deve acontecer nesta franquia irá afetar a linha
+        do tempo como um todo (principalmente os fãs). É certo que nada que acontecer em Animais Fantásticos mudará os
+        fatos de Harry Potter, mas de toda forma há coisas que não precisam ser modificadas – até mesmo este passado que
+        estamos conhecendo mais a fundo.
+
+      </p>
+      <h2 class="ccc">
+        ANIMAIS FANTÁSTICOS: OS SEGREDOS DE DUMBLEDORE
+      </h2>
+      <p class="ccc p-5">
+        Harry Potter e seu mundo mágico é um dos universos mais ricos da cultura pop e, por isso, se tornou uma das
+        sagas mais populares no cinema. Portanto, era de se esperar que, mesmo depois do término da história de Harry
+        (Daniel Radcliffe) e Voldemort (Ralph Fiennes) em Relíquias da Morte - Parte 2 (2011), produções derivadas
+        fossem lançadas. A franquia Animais Fantásticos é o primeiro resultado disso, com a história ambientada entre os
+        anos de 1920 e 1945 durante eventos que antecedem a Primeira Guerra Bruxa.
+
+        Depois de Animais Fantásticos e Onde Habitam (2016) e, principalmente, Os Crimes de Grindelwald (2018) – que não
+        foi bem recebido pela crítica e não atendeu às expectativas em bilheteria –, o terceiro filme intitulado de Os
+        Segredos de Dumbledore (2022) se mostra o mais bem resolvido e com o melhor desenvolvimento da história em
+        comparação com os anteriores. Mas ele ainda sofre com problemas em seu tom e, principalmente, com a escolha de
+        prolongar a saga Animais Fantásticos para além do necessário.
+
+        Qual é a história de Animais Fantásticos: Os Segredos de Dumbledore?
+
+
+
+        Animais Fantásticos: Os Segredos de Dumbledore é a sequência das aventuras de Newt Scamander (Eddie Redmayne),
+        um magizoologista que carrega em sua maleta uma coleção de fantásticas criaturas do mundo da magia descobertas
+        em suas viagens. Dessa vez, ele é convocado por Alvo Dumbledore (Jude Law) na luta contra o vilão Grindelwald
+        (Mads Mikkelsen).
+
+        A trama mostra por que o célebre bruxo de Hogwarts, que sabe da busca por controle de Grindelwald e é incapaz de
+        detê-lo sozinho, confia no magizoologista para liderar uma equipe de bruxos, bruxas e um bravo padeiro trouxa em
+        uma missão perigosa.
+
+        Ao longo do enredo, eles encontrarão velhos e novos animais fantásticos, além de enfrentar a crescente legião de
+        seguidores do vilão. Mas o que o grupo de Scamander não sabe é que Grindelwald colocará o Mundo Mágico em uma
+        luta contra o mundo dos trouxas. Enquanto o universo da magia fica mais dividido, Dumbledore deve decidir por
+        quanto tempo ele ficará à margem da guerra que se aproxima.
+
+        Dumbledore confronta os demônios de seu passado em Animais Fantásticos
+
+
+
+        O sábio e poderoso Alvo Dumbledore é uma peça chave nos filmes de Harry Potter, quando foi interpretado pelos
+        atores Michael Gambon e Richard Harris. Nos dois primeiros Animais Fantásticos, Jude Law vive uma versão em
+        formação do personagem, enquanto no terceiro filme nos aprofundamos ainda mais em seus segredos, quando ele
+        confronta seu passado misterioso e sua culpa. As nuances dessas fragilidades são passadas perfeitamente pela
+        atuação do ator, especialmente se tratando de um personagem poderoso.
+
+        Esse passado de Dumbledore está, obviamente, ligado ao de Gellert Grindelwald. Neste filme o vilão é
+        interpretado por Mads Mikkelsen, que chegou para substituir Johnny Depp, demitido da franquia depois de
+        polêmicas na vida pessoal. Combinando mais com o papel do que Depp, Mikkelsen explora a complexidade de
+        Grindelwald com o equilíbrio perfeito entre a imponência no comportamento ameaçador e seu charme.
+
+        Desta forma, Jude Law e Mads Mikkelsen são os maiores destaques de Os Segredos de Dumbledore, especialmente
+        quando estão juntos em cena, devido à química e tensão sexual entre eles. Finalmente temos maiores detalhes
+        sobre a relação e o envolvimento amoroso dos personagens no passado.
+
+        O final do segundo filme tem uma reviravolta importante, quando Grindelwald revela para Credence Barebone (Ezra
+        Miller) que ele seria o irmão perdido de Alvo, Aurélio Dumbledore. Isso poderia resultar em problemas no cânone
+        da franquia, mas felizmente o terceiro filme resolve bem essa situação. Quem sai prejudicado dessa história é
+        Credence, que se torna um vilão unidimensional em busca de vingança e sem desenvolvimento, servindo apenas como
+        uma marionete para Grindelwald.
+
+        Os animais fantásticos ofuscados pelo embate entre Dumbledore e Grindelwald
+
+
+
+        Como citei anteriormente, Newt Scamander é convocado por Dumbledore para ajudar na batalha contra Grindelwald ao
+        lado de um grupo formado por Theseus Scamander (Callum Turner), Bunty (Victoria Yeates), Eulalie Hicks (Jessica
+        Williams), Yusuf Kama (William Nadylam) e Jacob Kowalski (Dan Fogler). Estes personagens rendem os principais
+        momentos de aventura e descontração na narrativa, relacionados à sua missão e à presença de antigos e novos
+        animais fantásticos na produção.
+
+        O problema é que esse grupo parece servir apenas como um artifício do roteiro escrito por J.K. Rowling e Steve
+        Kloves para resultar nas principais, e mais interessantes, tramas da franquia de filmes: o confronto entre
+        Dumbledore e Grindelwald e a crescente guerra no Mundo Mágico.
+
+        Portanto, esse tom mais descontraído dos animais fantásticos não combina com o restante do enredo, bem mais
+        sombrio e político, que no terceiro filme conversa ainda mais com eventos atuais no mundo. Para se ter uma
+        ideia, a história até passa pelos conflitos no Ministério da Magia da Alemanha e na Confederação Internacional
+        de Bruxos.
+
+        Assim, Os Segredos de Dumbledore ganha força quando foca nos embates políticos e desdobramentos das as eleições
+        para a Confederação Internacional de Bruxos, que reforçam como os ideais extremistas de Grindelwald estão se
+        perpetuando progressivamente à medida que uma guerra se aproxima.
+
+        Esse talvez seja um dos principais problemas do filme (ou até mesmo de Animais Fantásticos como um todo): as
+        histórias nunca parecem fechadas e satisfatórias, mas sim uma preparação arrastada para o verdadeiro embate
+        entre Dumbledore e Grindelwald, que deve acontecer apenas no quinto filme planejado.
+
+        Se tratando da direção, David Yates está no comando da franquia desde Harry Potter e a Ordem da Fênix (2007) e
+        conhece bem esse universo, mas não apresenta muitas novidades em relação aos trabalhos anteriores – o que pode
+        significar um certo esgotamento em ideias criativas e talvez sinalizar o momento ideal para se testar novos
+        nomes no cargo.
+
+        Maria Fernanda Cândido em Animais Fantásticos: Os Segredos de Dumbledore
+
+
+
+        Não posso deixar de mencionar a participação da atriz brasileira Maria Fernanda Cândido, que interpreta Vicência
+        Santos, a Ministra da Magia do Brasil e uma das candidatas ao cargo principal na Confederação Internacional de
+        Bruxos contra Liu Tao (Dave Wong).
+
+        Ela aparece pouco, mas é uma personagem importante na conclusão da trama, que provavelmente terá um papel ainda
+        mais importante nos próximos filmes.
+
+
+        Vale a pena assistir Animais Fantásticos: Os Segredos de Dumbledore?
+
+        Os Segredos de Dumbledore é o filme mais maduro de Animais Fantásticos até o momento e se destaca por explorar
+        personagens complexos como Dumbledore e Grindelwald, assim como a relação de amor e ódio entre eles, que se
+        tornaram os elementos mais interessantes da franquia atualmente.
+
+        Assim como os anteriores, o longa sofre em alguns momentos por ser uma preparação para um conflito maior, mas
+        acaba se saindo bem por mostrar uma narrativa mais urgente em relação às questões políticas no Mundo Mágico.
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+
+  <div class="container">
+
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">
+            <p class="ccc"> Email </p>
+          </label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">
+            <p class="ccc"> Senha </p>
+          </label>
+          <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">
+          <p class="ccc"> Endereço </p>
+        </label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">
+          <p class="ccc"> Endereço 2 </p>
+        </label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">
+            <p class="ccc"> Cidade </p>
+          </label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputEstado">
+            <p class="ccc"> Estado </p>
+          </label>
+          <select id="inputEstado" class="form-control">
+            <option selected>
+              <p class="ccc"> Escolher... </p>
+            </option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputCEP">
+            <p class="ccc"> CEP </p>
+          </label>
+          <input type="text" class="form-control" id="inputCEP">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            <p class="ccc"> Clique em mim</p>
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Entrar</button>
+    </form>
+  </div>
+
+
+
+
+
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
